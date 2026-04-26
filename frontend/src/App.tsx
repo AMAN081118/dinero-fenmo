@@ -29,9 +29,7 @@ function App() {
       <div className="mx-auto max-w-4xl space-y-6">
         {/* ── Header ───────────────────────────────────────── */}
         <header>
-          <h1 className="text-3xl font-bold text-gray-900">
-            💰 Expense Tracker
-          </h1>
+          <h1 className="text-3xl font-bold text-gray-900">Expense Tracker</h1>
           <p className="text-sm text-gray-500 mt-1">
             Track your personal expenses and understand where your money goes.
           </p>
@@ -46,13 +44,13 @@ function App() {
           onClearStatus={clearSubmitStatus}
         />
 
-        {/* ── Summary ──────────────────────────────────────── */}
+        {/* ── Summary ───*/}
         <ExpenseSummary total={total} count={count} loading={loading} />
 
-        {/* ── Category Breakdown ───────────────────────────── */}
+        {/* ── Category Breakdown ──*/}
         <CategorySummary expenses={expenses} loading={loading} />
 
-        {/* ── Filters & Sort ───────────────────────────────── */}
+        {/* ── Filters & Sort ──*/}
         <ExpenseFilters
           category={category}
           onCategoryChange={setCategory}
@@ -60,7 +58,7 @@ function App() {
           onSortChange={setSort}
         />
 
-        {/* ── Expense List ─────────────────────────────────── */}
+        {/* ── Expense List ── */}
         <ExpenseList
           expenses={expenses}
           loading={loading}
@@ -69,9 +67,9 @@ function App() {
         />
       </div>
 
-      {/* ── Footer ───────────────────────────────────────── */}
+      {/* ── Footer ─── */}
       <footer className="mt-12 text-center text-xs text-gray-400 pb-4">
-        Expense Tracker · Built with FastAPI + React
+        Happy budgeting! &copy; 2026 dinero. All rights reserved.
       </footer>
     </div>
   );

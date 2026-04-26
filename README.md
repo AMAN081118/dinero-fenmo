@@ -89,6 +89,10 @@ pytest tests/ -v
 
 ---
 
+![alt text](frontend/public/test.png)
+
+---
+
 ## Trade-offs (Due to Timebox)
 
 | Decision                     | Trade-off                                                                      |
@@ -128,9 +132,9 @@ pytest tests/ -v
 
 ## Live Demo
 
-- **App**: https://expense-tracker-YOUR_USERNAME.vercel.app
-- **API Docs**: https://expense-tracker-api-xxxx.onrender.com/docs
-- **Health Check**: https://expense-tracker-api-xxxx.onrender.com/health
+- **App**: https://dinero-fenmo.vercel.app/
+- **API Docs**: https://dinero-fenmo-backend.onrender.com/docs
+- **Health Check**: https://dinero-fenmo-backend.onrender.com/health
 
 - The backend is hosted on Render's free tier, which sleeps after 15 minutes of inactivity. The first request may take ~30-60 seconds to wake up. Subsequent requests will be fast.
 
